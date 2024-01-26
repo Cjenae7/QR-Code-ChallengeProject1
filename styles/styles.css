@@ -1,10 +1,7 @@
 
-/* html {
-  background-color: hsl(212, 45%, 89%);
-} */
 .flex-container{
-  display:flex;
-  background-color: hsl(212, 45%, 89%);
+  display:flex-grow;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .flex-container img {
@@ -15,13 +12,12 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 100%);
-  position: relative;
+  background-color:hsl(212, 45%, 89%);
+  /*position: relative;*/
   /* top: 100px;
    left: 550px; */
   min-height: 100vh;
   max-width: 20rem;
-  flex-direction: column;
   align-items:center;
   border-radius: 3rem;
   font-family: "Outfit";
