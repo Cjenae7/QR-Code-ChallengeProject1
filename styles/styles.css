@@ -2,7 +2,12 @@
 /* html {
   background-color: hsl(212, 45%, 89%);
 } */
-flex.container img {
+.flex-container{
+  display:flex;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.flex-container img {
   /* height: 300px;*/
   max-width: 100%; 
   display:flex;
