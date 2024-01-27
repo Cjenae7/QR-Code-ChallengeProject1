@@ -1,30 +1,97 @@
-/* html {
-  background-color: hsl(212, 45%, 89%);
-} */
-.flex-container {
-  display: flex-grow;
-  background-color: hsl(0, 0%, 100%);
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.flex-container img {
-  border-radius: 2rem;
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
   max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
 }
 
 body {
   background-color: hsl(212, 45%, 89%);
-  min-height: 100vh;
-  max-width: 20rem;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 3rem;
+  display: grid;
+  margin-top: 100px;
 }
+
+.flex-container {
+  background-color: hsl(0, 0%, 100%);
+  /*display: grid;*/
+  /*min-height: 100vh;*/
+  padding: 20px;
+  margin: auto;
+  max-width: 20rem;
+  border-radius: 1rem;
+}
+.flex-container img {
+  border-radius: 1rem;
+  max-width: 100%;
+}
+
 .text-container h1 {
   font-weight: 700;
   font-size: 1.5rem;
+  font-family: "Outfit";
+  text-align: center;
+  margin-top: 1.1em;
 }
 .text-container p {
   font-size: 1rem;
   color: grey;
   font-weight: 400;
+  margin: 1em;
+  font-family: "Outfit";
+  text-align: center;
+}
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Outfit";
 }
